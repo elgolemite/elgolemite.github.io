@@ -200,6 +200,12 @@
       border-left: 5px solid #111;
     }
 
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+     }
+
     .project-card:hover {
       transform: translateY(-8px);
       box-shadow: 0 10px 30px rgba(0,0,0,0.08);
@@ -339,45 +345,86 @@
   </section>
 
 
-  <section class="projects" id="projects">
-    <div class="section-title">
-      <div class="tag">Selected Work</div>
-      <h2>Projects</h2>
+ <section class="projects" id="projects">
+  <div class="section-title">
+    <div class="tag">Selected Work</div>
+    <h2>Projects</h2>
+  </div>
+
+  <div class="project-grid">
+
+    <div class="project-card">
+      <img src="images/ctf-logo.png" alt="CTF Writeups logo" class="project-logo">
+
+      <h3>CTF Writeups</h3>
+
+      <p>
+        Writeups covering web exploitation, reverse engineering,
+        Linux privilege escalation, and forensics.
+      </p>
+
+      <a href="https://github.com/elgolemite/CTF-Writeups" target="_blank">
+        Read Writeups →
+      </a>
     </div>
 
-      <div class="project-card">
-        <h3>CTF Writeups</h3>
-        <p>Writeups covering web exploitation, reverse engineering, Linux privilege escalation, and forensics.</p>
-        <a href="https://github.com/elgolemite/CTF-Writeups">Read Writeups →</a>
-      </div>
+    <div class="project-card">
+      <img src="images/honeypot-logo.png" alt="Honeypot project logo" class="project-logo">
 
-      <div class="project-card">
-        <h3>Windows Server Honeypot Simulating SharePoint Infrastructure</h3>
-        <p>Deployed a Windows Server environment hosting SharePoint to attract and monitor attacks.</p>
-        <a href="https://github.com/elgolemite/Honeypot">Read Project →</a>
-      </div>
+      <h3>Windows Server Honeypot</h3>
 
-      <div class="project-card">
-        <h3>Multi-Stage-Cyberattack-Incident-Response-and-Forensic-Investigation</h3>
-        <p>This is NEXSEC CTF 2025 final challenge</p>
-        <a href="https://github.com/elgolemite/Multi-Stage-Cyberattack-Incident-Response-and-Forensic-Investigation
-          ">Read Project →</a>
-      </div>
+      <p>
+        Deployed a Windows Server environment hosting SharePoint
+        to attract, monitor, and investigate attacks.
+      </p>
 
-      <div class="project-card">
-        <h3>Spider Web</h3>
-        <p>A web crawler and vulnerability scanner designed to improve endpoint discovery and testing coverage.</p>
-        <a href="https://github.com/elgolemite/fyp-project-degree">View Project →</a>
-      </div>
+      <a href="https://github.com/elgolemite/Honeypot" target="_blank">
+        Read Project →
+      </a>
     </div>
-  </section>
 
+    <div class="project-card">
+      <img src="images/forensics-logo.png" alt="Forensic investigation logo" class="project-logo">
+
+      <h3>Multi-Stage Cyberattack Investigation</h3>
+
+      <p>
+        Incident response and forensic investigation conducted for
+        the NEXSEC CTF 2025 final challenge.
+      </p>
+
+      <a
+        href="https://github.com/elgolemite/Multi-Stage-Cyberattack-Incident-Response-and-Forensic-Investigation"
+        target="_blank"
+      >
+        Read Project →
+      </a>
+    </div>
+
+    <div class="project-card">
+      <img src="images/spider-logo.png" alt="Spider Web project logo" class="project-logo">
+
+      <h3>Spider Web</h3>
+
+      <p>
+        A web crawler and vulnerability scanner designed to improve
+        endpoint discovery and security testing coverage.
+      </p>
+
+      <a href="https://github.com/elgolemite/fyp-project-degree" target="_blank">
+        View Project →
+      </a>
+    </div>
+
+  </div>
+</section>
+  
   <section class="contact" id="contact">
     <h2>Let's Connect</h2>
     <p>Interested in cybersecurity, CTF, or project collaboration?</p>
 
     <a href="https://github.com/elgolemite" target="_blank">GitHub</a>
-    <a href="mailto:your-asyrafluftifauzi@gmail.com">Email</a>
+    <a href="mailto:asyrafluftifauzi@gmail.com">Email</a>
     <a href="https://www.linkedin.com/in/asyraf-lufti-fauzi-b9295120a/" target="_blank">LinkedIn</a>
   </section>
 
